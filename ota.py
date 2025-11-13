@@ -1,9 +1,9 @@
 import time, network, urequests as rq, uhashlib as uh, esp32, machine, esp
 
 # ===== CONFIG =====
-WIFI_SSID = WiFiのSSID
-WIFI_PASS = WiFiのパスワード
-FW_URL    = "http://サーバーのIPアドレス:任意のポート番号/OTA/ファームウェアのファイル名"
+WIFI_SSID = Wi-FiのSSID
+WIFI_PASS = Wi-Fiのパスワード
+FW_URL    = "http://サーバーのホスト名:任意のポート番号/OTA/ESP32_GENERIC-OTA-20250911-v1.26.1.app-bin"
 CHUNK     = 1024
 
 
