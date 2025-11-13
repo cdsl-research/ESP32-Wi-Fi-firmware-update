@@ -8,7 +8,6 @@ def _log_info():
     run = Partition(Partition.RUNNING)
     info = run.info()
     label = info[4] if len(info) >= 5 else None
-    label = None
     u = os.uname()
 
     fw_ver = getattr(u, 'version', None) or getattr(u, 'release', None)
@@ -18,7 +17,7 @@ def _log_info():
     mb = sta.config('mac')
     mac = ':'.join('%02x' % b for b in mb)
     
-    print('[BOOT] running=', label, 'fw=', fw_ver, 'mac=', mac)
+    print('[BOOT] running=', label, 'fw=', fw_ver)
 
 
 def _run():
