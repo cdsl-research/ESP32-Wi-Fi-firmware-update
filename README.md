@@ -58,7 +58,8 @@ $ python3 -m http.server 8000
 ## ESP32
 次の画像は，ESP32のコンソールに出力された実行結果の画像である．`reset machine`の出力を堺に上部がアップデートの適用前，下部がアップデートの適用後である．適用前では`ota_0`のパーテーションを使用しており，ファームウェアは`v1.26.0 on 2025-08-09`を使用していることがわかる．適用後では適用後では`ota_1`のパーテーションに変わっており，ファームウェアも`v1.26.1 on 2025-09-11`に変わっていることがわかる．これにより，ファームウェアアップデートが正常に行えたことがわかる．
 
-<img width="471" height="718" alt="image" src="https://github.com/user-attachments/assets/08279f4a-371f-4bea-aaf4-b4b8cd9c61da" />
+<img width="694" height="737" alt="image" src="https://github.com/user-attachments/assets/bdfd69a4-2df1-4f5a-8948-cd4cb34b150f" />
+
 
 ## サーバー
 次の画像はサーバーでコマンドを実行してESP32を動作させた際の出力結果の画像である．出力を見るとESP32がHTTPを使用してOTAディレクトリにあるESP32_GENERIC-OTA-20250911-v1.26.1.app-binをGETしている事が分かる．
